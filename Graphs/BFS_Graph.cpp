@@ -8,6 +8,7 @@ class graph{
   map<t,list<t>> l;
 public: 
    
+ //Add new Edge in the graph
   void addedge(int x,int y) 
   { 
       l[x].push_back(y); 
@@ -51,8 +52,7 @@ int main()
     g.addedge(3,4); 
     g.addedge(4,5); 
      
-    g.dfs(0); 
-    cout<<"\n"; 
     g.bfs(0); 
+    cout<<"\n"; 
     return 0; 
 }
